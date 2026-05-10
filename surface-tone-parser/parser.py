@@ -27,6 +27,12 @@ def parse(phrase):
     return result
 
 if __name__ == "__main__":
-    phrase = input("Kinande phrase: ")
+    print("=== TYPE <q> TO EXIT ===\n")
+
+    while True:
+        phrase = input(">>> ")
+
+        if phrase == "q":
+            break
     
-    print(parse(phrase))
+        print(f"    {parse(phrase)}")
